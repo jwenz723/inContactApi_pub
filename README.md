@@ -15,7 +15,7 @@ Template plugin for extracting metrics from the Windows Performance Counter. Thi
 
 #### Performance Counter Collection Setup
 
-This plugin is useable out of the box on WEB servers. There are 3 files used to define performance counters that should be collected by this plugin. They are: definition_counters.txt, definition_metrics.txt, and definition_multipliers.txt.  Each performance counter to be collected MUST have a value in each of the 3 files.
+This plugin is useable out of the box on API servers. There are 3 files used to define performance counters that should be collected by this plugin. They are: definition_counters.txt, definition_metrics.txt, and definition_multipliers.txt.  Each performance counter to be collected MUST have a value in each of the 3 files.
 
 The data between these 3 files will be correlated within this plugin based upon the line number of the data within each file. Therefore, if you wish to collect the performance counter "\ASP.NET Apps v4.0.30319(_LM_W3SVC_1_ROOT_inContactAPI)\Requests/Sec", with a pulse metric name of "INC_WEB_API_CALLS_PER_SECOND", and a multipler of "1.0", then these 3 values MUST be on the same line number in their respective files.
 
